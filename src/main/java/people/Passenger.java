@@ -9,4 +9,8 @@ public class Passenger extends Person{
         this.NumberBags = NumberBags;
     }
 
+    public int getBags(){
+        return this.NumberBags;
+    }
+
 }
