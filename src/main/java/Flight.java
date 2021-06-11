@@ -26,5 +26,46 @@ public class Flight {
 
     }
 
+    public String getFlightNo(){
+        return this.flightNo;
+    }
+
+    public PlaneType getPlaneType(){
+        return this.planeType;
+    }
+
+    public String getDestination(){
+        return this.destination;
+    }
+
+    public String getDeparture(){
+        return this.departure;
+    }
+
+    public String getToD(){
+        return this.ToD;
+    }
+
+    public ArrayList<CabinCrew> getCabinCrew() {
+        return cabinCrew;
+    }
+
+    public ArrayList<Passenger> getPassengers() {
+        return passengers;
+    }
+
+    public ArrayList<Pilot> getPilots() {
+        return pilots;
+    }
+
+    public int returnEmptySeats(){
+        return planeType.getCapacity() - passengers.size();
+    }
+
+    public void bookPassenger(Passenger passenger){
+        if (this.returnEmptySeats() > 0 ) {
+            passengers.add(passenger);
+        }
+    }
 
 }
