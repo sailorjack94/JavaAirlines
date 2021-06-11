@@ -24,4 +24,9 @@ public class CabinCrewTest {
         assertEquals(Rank.PURSER, cabinCrew.getRank());
     }
 
+    @Test
+    public void canMakeAnnouncements(){
+        assertEquals("Please listen carefully to the following announcement.", cabinCrew.makeAnnouncement());
+    }
+
 }
