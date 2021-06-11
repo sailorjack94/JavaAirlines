@@ -12,4 +12,11 @@ public class Pilot extends Person{
         this.licence = licence;
     }
 
+    public Rank getRank() {
+        return rank;
+    }
+
+    public String getLicenceNo() {
+        return licence;
+    }
 }
