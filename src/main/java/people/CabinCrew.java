@@ -1,4 +1,4 @@
 package people;
 
-public class CabinCrew extends Person{
+public class CabinCrew {
 }
